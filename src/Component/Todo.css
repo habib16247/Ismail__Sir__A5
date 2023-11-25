@@ -1,0 +1,72 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .headLine {
+    text-align: center;
+  }
+  
+  .todo-content {
+    margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .input-container {
+    width: calc(100% - 70px); /* Adjust as needed */
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .addBtn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  td {
+    word-wrap: break-word;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .id {
+    width: 0%;
+    text-align: center;
+  }
+  
+  .cell {
+    width: 0%;
+  }
+
+
+  
+  /* Responsive Styling */
+  @media (max-width: 600px) {
+    .input-container {
+      width: 100%;
+    }
+  }
+
+
