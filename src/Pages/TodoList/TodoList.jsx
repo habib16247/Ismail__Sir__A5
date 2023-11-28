@@ -48,8 +48,10 @@ const TodoList = () => {
         <h1 className='headLine'>Add The To-Do Item</h1>
         <div className="todo-content">
         <form onSubmit={(e) => todoHandler(e)}> 
+            <span className='input-field'>
             <label htmlFor="input">Add Todo Item : </label>
             <input onChange={e => setInput(e.target.value)} value={input} id='input' type="text" placeholder='  Write your task....' />
+            </span>
             <button
             onClick={updateItem ? updateTodo : addTodos}
             type='submit' className='addBtn'>
@@ -68,10 +70,3 @@ const TodoList = () => {
 }
 
 export default TodoList
-
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/habib16247/Ismail__Sir__A5.git
-// git push -u origin main

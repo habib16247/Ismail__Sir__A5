@@ -1,0 +1,130 @@
+:root{
+    color: #161616;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+.react-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body {
+    height: auto;
+    background: #FFFFFF;
+}
+
+.C-container {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    background: #FFFFFF;
+    margin: 0 auto 100px auto;
+}
+
+.content {
+    max-width: 560px;
+    height: 500px;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+.post-owner {
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-owner img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.arabic-para {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 10px;
+}
+
+.react-amount {
+    display: flex;
+    justify-content: space-between;
+    line-height: 5px;
+}
+
+a {
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(40, 41, 42);
+}
+
+.react-icons span {
+    display: flex;
+    gap: 10px;
+}
+
+img {
+    width: 30px;
+}
+
+.commenter {
+    display: flex;
+    align-items: end;
+    gap: 8px;
+}
+
+#name {
+    width: 20vw;
+}
+
+input[type="text"] {
+    width: 40vw;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #161616;
+    border-bottom: 2px solid #a5a1a1;
+    margin-top: 10px;
+}
+
+#submit {
+    background: transparent;
+    border: 0;
+}
+
+.comment-text {
+    display: flex;
+}
+
+.comment-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 100px;
+}
+
+.owner {
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.comment {
+    border: 1px solid #a8acac;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
