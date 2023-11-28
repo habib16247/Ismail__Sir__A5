@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Todo.css";
 
 const Todos = ({ item, handle, index, getTodo}) => {
-    const [isChecked, setIsChecked] = useState(true)
+    const [isChecked, setIsChecked] = useState(false)
     
   return (
     <>
@@ -10,7 +10,7 @@ const Todos = ({ item, handle, index, getTodo}) => {
         <tbody>
           <tr>
             <td className="id">
-              <input type="checkbox" onClick={() => setIsChecked(false)}/>
+              <input type="checkbox" onClick={() => setIsChecked(!isChecked)}/>
             </td>
             <td
             style={{textDecoration: isChecked && "line-through"}}

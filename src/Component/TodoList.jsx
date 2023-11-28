@@ -10,9 +10,16 @@ const TodoList = () => {
 
     const todoHandler = (e) => {
         e.preventDefault();
-        input === "" ? alert("Plaese enter something!!!") : setTodo([...todo, input])
-        setInput("")
     }
+
+    const addTodos = () => {
+        if (input.trim() !== '') {
+            setTodo([...todo, input]);
+            setInput("");
+        } else {
+            alert("Please enter something!!!");
+        }
+      };
 
     
 
@@ -40,12 +47,15 @@ const TodoList = () => {
     <div className="container">
         <h1 className='headLine'>Add The To-Do Item</h1>
         <div className="todo-content">
-        <form onSubmit={todoHandler}> 
+        <form onSubmit={(e) => todoHandler(e)}> 
             <label htmlFor="input">Add Todo Item : </label>
             <input onChange={e => setInput(e.target.value)} value={input} id='input' type="text" placeholder='  Write your task....' />
             <button
+            onClick={updateItem ? updateTodo : addTodos}
             type='submit' className='addBtn'>
-                Add
+                {
+                    updateItem ? "Update" : "Add "
+                }
             </button>
         </form>
             {
